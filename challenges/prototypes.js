@@ -16,8 +16,9 @@ function CuboidMaker(attributes) {
   -Formula for cuboid volume: length * width * height
 */
 Object.prototype.volume = function() {
-    return this.length * this.width * this.height;
-}
+        return this.length * this.width * this.height;
+    }
+    //'object' should be the CuboidMaker but works since it is the object of reference.
 
 
 /* == Step 3: Surface Area Method ==

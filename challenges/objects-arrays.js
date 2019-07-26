@@ -13,7 +13,9 @@ const tRex = {
     weight: '7000kg',
     length: '12m',
     period: 'Late Cretaceous',
-    roar: "RAWERSRARARWERSARARARRRR!"
+    roar: () => {
+        return "RAWERSRARARWERSARARARRRR!"; //method property
+    }
 }
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -50,7 +52,7 @@ console.log(tRex.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(tRex.roar);
+console.log(tRex.roar());
 
 
 // ==== Arrays ====
@@ -76,7 +78,7 @@ const universities = [];
 for (let i = 0; i < graduates.length; i++) {
     universities.push(graduates[i].university)
 }
-console.log(universities)
+console.log(universities.sort());
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
